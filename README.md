@@ -1,10 +1,10 @@
 # Juego del amigo secreto
 
-_Acá va un párrafo que describa lo que es el proyecto_
+Desarrollo del backend de un juego llamada Amigo Secreto, es un proyecto que tiene como objetivo implementar la logica de programacion desde Java Script
 
 ## Comenzando 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+////
 
 Mira **Deployment** para conocer como desplegar el proyecto.
 
