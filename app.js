@@ -2,22 +2,26 @@ let nombreUsuario;
 let listaAmigos=[];
 let nombreIngresado;
 
-
-
 function ingresarDatos(elemento,texto)
     {
         let ingresarDatos=document.querySelector(elemento);
         ingresarDatos.innerHTML=texto;
-
     }
 
 function agregarAmigo()
     {
         nombreIngresado=document.getElementById('amigo').value;
-        listaAmigos.push(nombreIngresado);
-        mostrarListaAmigos();
-        // ingresarDatos('#listaAmigos',listaAmigos.join("\n")); //Esta lista es la que quiero que se imprima cada uno en un renglon
- 
+        if(nombreIngresado=='')
+            {
+                ingresarDatos('h2','Ingresa un nombre valido');
+            }
+        else    
+            {
+                ingresarDatos('h2','Ingrese el nombre de su amigo');
+                listaAmigos.push(nombreIngresado);
+                mostrarListaAmigos();
+                // ingresarDatos('#listaAmigos',listaAmigos.join("\n")); //Esta lista es la que quiero que se imprima cada uno en un renglon
+            }        
 
         limpiarCaja();
     }
@@ -26,20 +30,25 @@ function mostrarListaAmigos()
     {
         let tam=listaAmigos.length;
         let i=0;
-        while(tam!=i)
+        let contenido="";
+        while(i<tam)
             {
-                    ingresarDatos('#listaAmigos',`${listaAmigos[i]},<b>`);
-                    i++;
+                if (listaAmigos[i]!="")
+                    {
+                        contenido=contenido+listaAmigos[i]+"<br>";
+                    }
+                i++;
             }    
+        ingresarDatos('#listaAmigos',contenido);
+        
     }
     
 
- function sortearAmigo()
+function sortearAmigo()
     {
-        ingresarDatos('#resultado','aqui se mostrara el resultado');
+        let indiceSorteo=Math.floor(Math.random()*listaAmigos.length);
+        ingresarDatos('#resultado',`Tu amigo secreto sera: ${(listaAmigos[indiceSorteo])}`);
     }
-
-
 
 function condicionesIniciales()
     {
@@ -57,7 +66,6 @@ function limpiarCaja()
     {
         document.getElementById('amigo').value='';
     }
-
 
 
 condicionesIniciales();
