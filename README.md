@@ -39,7 +39,16 @@ Al presionar el botón **"Sortear Amigo"**, se elige aleatoriamente un nombre de
 - `sortearAmigo()` realiza un sorteo aleatorio con `Math.random()` y muestra el resultado.
 - Se emplea una función auxiliar `ingresarDatos()` para actualizar el contenido del DOM de forma reutilizable.
 
-## 🚀 Cómo usar
+## 🎮 Como jugarlo 
+1. Abre el link de la pagina con el juego
+```bash
+   https://mind0t.github.io/challenge-amigo-secreto_esp-main/
+```
+2. Comienza a agregar nombres y luego ¡haz clic en **Sortear Amigo** para ver el resultado!
+   
+3. Puedes compartir el link y probarlo desde cualquier dispositivo
+   
+## 🚀 Cómo ver código y probarlo.
 
 1. Clona este repositorio:
    ```bash
