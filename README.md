@@ -69,4 +69,4 @@ Al presionar el botón **"Sortear Amigo"**, se elige aleatoriamente un nombre de
 
 **Irvin Soriano**  
 Estudiante de Ingeniería en Inteligencia Artificial  
-Apasionado por la programación, el desarrollo web y los retos que combinan lógica con creatividad.
+Apasionado por la programación, nube y desarrollo de software.
