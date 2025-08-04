@@ -1,119 +1,63 @@
-# Juego del amigo secreto
+# 🎁 Amigo Secreto – Challenge de Lógica de Programación
 
-Desarrollo del backend de un juego llamada Amigo Secreto, es un proyecto que tiene como objetivo implementar la logica de programacion desde Java Script
+Este proyecto es una pequeña aplicación desarrollada como parte de un **challenge de lógica de programación**, cuyo objetivo era aplicar los fundamentos de JavaScript para crear la lógica de un **juego de amigo secreto** en el navegador.
 
-## Comenzando 🚀
+## 📌 Descripción
 
-////
+La aplicación permite a los usuarios ingresar una lista de nombres y luego realizar un sorteo aleatorio para determinar quién será el "amigo secreto". Todo el proyecto fue desarrollado en **JavaScript puro (vanilla JS)** y se integra con una interfaz HTML/CSS previamente proporcionada.
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+## ⚙️ Funcionalidades
 
-## Indicaciones
-En este desafío, desarrollarás una aplicación que permita a los usuarios ingresar nombres de amigos en una lista para luego realizar un sorteo aleatorio y determinar quién es el "amigo secreto".
+✅ **Agregar nombres**:  
+Los usuarios pueden escribir el nombre de un amigo y añadirlo a la lista presionando el botón **"Añadir"**.
 
-El usuario deberá agregar nombres mediante un campo de texto y un botón "Adicionar". Los nombres ingresados se mostrarán en una lista visible en la página, y al finalizar, un botón "Sortear Amigo" seleccionará uno de los nombres de forma aleatoria, mostrando el resultado en pantalla.
+✅ **Validar entrada**:  
+Si el campo está vacío, se muestra un mensaje de advertencia pidiendo un nombre válido.
 
-Fucionalidades:
-Agregar nombres: Los usuarios escribirán el nombre de un amigo en un campo de texto y lo agregarán a una lista visible al hacer clic en "Adicionar".
+✅ **Visualizar lista**:  
+Los nombres ingresados se muestran en una lista visible dentro de la página.
 
-Validar entrada: Si el campo de texto está vacío, el programa mostrará una alerta pidiendo un nombre válido.
+✅ **Sortear Amigo Secreto**:  
+Al presionar el botón **"Sortear Amigo"**, se elige aleatoriamente un nombre de la lista y se muestra en pantalla.
 
-Visualizar la lista: Los nombres ingresados aparecerán en una lista debajo del campo de entrada.
-
-Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página.
-
-### Pre-requisitos 📋
-
-_Que cosas necesitas para instalar el software y como instalarlas_
+## 📂 Estructura del proyecto
 
 ```
-Da un ejemplo
+/amigo-secreto/
+├── index.html          // Estructura principal de la interfaz
+├── style.css           // Estilos visuales (proporcionado)
+├── app.js              // Lógica en JavaScript (desarrollada)
+├── assets/             // Imágenes del proyecto (proporcionadas)
+└── README.md           // Este archivo
 ```
 
-### Instalación 🔧
+## 🧠 Lógica implementada (JavaScript)
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+- Se utiliza un **array** para almacenar los nombres ingresados.
+- La función `agregarAmigo()` valida la entrada y actualiza la lista.
+- `mostrarListaAmigos()` muestra cada nombre en una nueva línea usando HTML dinámico.
+- `sortearAmigo()` realiza un sorteo aleatorio con `Math.random()` y muestra el resultado.
+- Se emplea una función auxiliar `ingresarDatos()` para actualizar el contenido del DOM de forma reutilizable.
 
-_Dí cómo será ese paso_
+## 🚀 Cómo usar
 
-```
-Da un ejemplo
-```
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/Mind0T/challenge-amigo-secreto_esp-main.git
+   ```
+2. Abre el archivo `index.html` en tu navegador.
 
-_Y repite_
+3. Comienza a agregar nombres y luego ¡haz clic en **Sortear Amigo** para ver el resultado!
 
-```
-hasta finalizar
-```
+## 💡 Posibles mejoras futuras
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+- Evitar nombres duplicados.
+- Agregar la funcionalidad de que cada persona tenga un amigo secreto distinto (parejas secretas).
+- Opción para reiniciar la lista.
+- Almacenar datos en `localStorage` para mantener la información tras recargar la página.
 
-## Ejecutando las pruebas ⚙️
+## 🧑‍💻 Autor
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
-
-## Construido con 🛠️
-
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* Dona con cripto a esta dirección: `0xf253fc233333078436d111175e5a76a649890000`
-* etc.
-
-
-
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+**Irvin Soriano**  
+Estudiante de Ingeniería en Inteligencia Artificial  
+Apasionado por la programación, el desarrollo web y los retos que combinan lógica con creatividad.
